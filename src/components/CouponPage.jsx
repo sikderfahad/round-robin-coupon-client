@@ -61,6 +61,7 @@ export default function CouponPage() {
       localStorage.setItem("lastRequestTime", JSON.stringify(now));
       showToast("Congrates! Got your coupon. Please save it");
       setBtnState("success");
+      setMessage("");
       setLoading(false);
       //   console.log(res.data);
     } catch (error) {
