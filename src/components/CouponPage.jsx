@@ -73,7 +73,7 @@ export default function CouponPage() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
-      <div className="card w-96 bg-white shadow-lg rounded-xl p-4">
+      <div className="card w-full md:w-96 bg-white shadow-lg rounded-xl p-4">
         <div className="card-body text-center">
           <h1 className="text-2xl font-bold text-gray-700">
             Round-Robin Coupon System
@@ -85,7 +85,7 @@ export default function CouponPage() {
             <p className="mt-4 text-red-500 font-medium">{message}</p>
           )}
           {coupon && (
-            <p className="mt-4 text-green-600">
+            <p className="mt-4 text-xl text-green-600">
               Your Coupon: <span className="font-semibold"> {coupon}</span>
             </p>
           )}
