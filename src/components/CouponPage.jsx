@@ -25,6 +25,7 @@ export default function CouponPage() {
   const claimCoupon = async () => {
     setLoading(true);
     setBtnState("loading");
+    setMessage("");
 
     const lastRequestTime = localStorage.getItem("lastRequestTime");
     const now = Date.now();
